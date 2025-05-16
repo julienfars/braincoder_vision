@@ -22,9 +22,10 @@ Set up conda environment and install Braincode
 .. code-block:: bash
 
         # Install 
+        git clone https://github.com/julienfars/braincoder_vision.git
+        cd braincoder_vision/
         conda create --name braincoder tensorflow-probability tensorflow -c conda-forge
         conda activate braincoder
-        pip install git+https://github.com/Gilles86/braincoder.git
         pip install tf_keras 
         pip install 'tensorflow[and-cuda]'
 
