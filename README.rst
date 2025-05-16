@@ -1,4 +1,4 @@
-Welcome to Braincoder's documentation!
+Welcome to Braincoder's documentation! (this is a fork to adapt code to a specific setup)
 ======================================
 
 **Braincoder** is a package to fit encoding models to neural data (for now fMRI) and
@@ -16,29 +16,15 @@ Installation
 Note that you need an environment with both `tensorflow-probability` and
 `tensorflow`.
 
-Set up miniforge
+Set up conda environment and install Braincode
 -----------------
 
-(Only do this if you don't have conda installed)
-I recommend using `miniforge <https://github.com/conda-forge/miniforge>`_,
-make sure you use the ``mamba``-solver and set ``channel-priority`` to ``strict``:
-
 .. code-block:: bash
 
-        # Install mamba solver and set channel priority
-        conda install mamba -n base -c conda-forge
-        conda config --set channel_priority strict.
-
-Install braincoder
-------------------
-
-Here we create a new environment called `braincoder` with the required packages:
-
-.. code-block:: bash
-
-    mamba create --name braincoder tensorflow-probability tensorflow -c conda-forge
-    mamba activate braincoder
-    pip install git+https://github.com/Gilles86/braincoder.git
+        # Install 
+        conda create --name braincoder tensorflow-probability tensorflow -c conda-forge
+        conda activate braincoder
+        pip install git+https://github.com/Gilles86/braincoder.git
 
 How to Cite
 ===========
